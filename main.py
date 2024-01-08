@@ -44,7 +44,7 @@ def main():
             print(f"{course_name}: {message}")
     else:
         print("\nNo courses are currently available.")
-        sys.exit(0)
+        sys.exit(1)
 
     # if any of the courses are available, exit with 1, to make the action fail, to trigger the email notification
     sys.exit(1)
