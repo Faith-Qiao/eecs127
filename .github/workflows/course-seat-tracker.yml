@@ -9,7 +9,7 @@ on:
       - "ecc-cs8"
   # Schedule the workflow to run every 5 minutes
   schedule:
-    - cron: '*/5 * * * *'
+    - cron: '*/15 * * * *'
   # Allow manual triggering of the workflow
   workflow_dispatch:
 
