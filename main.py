@@ -3,7 +3,10 @@ import importlib
 
 COURSE_TO_DETECT = [
     'ENGIN_183D',
-    'PHYSICS_7A'
+    'PHYSICS_7A',
+    'physics_7a_lee_3',
+    'physics_7a_william'
+
 ]
 
 def check_course_availability(course_name):
@@ -44,7 +47,7 @@ def main():
             print(f"{course_name}: {message}")
     else:
         print("\nNo courses are currently available.")
-        sys.exit(1)
+        sys.exit(0)
 
     # if any of the courses are available, exit with 1, to make the action fail, to trigger the email notification
     sys.exit(1)
