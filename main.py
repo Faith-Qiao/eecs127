@@ -2,7 +2,6 @@ import sys
 import importlib
 
 COURSE_TO_DETECT = [
-    'ENGIN_183D',
     'PHYSICS_7A',
     'lee_3',
     'physics_7a_william'
