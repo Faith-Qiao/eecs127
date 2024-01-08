@@ -4,7 +4,7 @@ import importlib
 COURSE_TO_DETECT = [
     'ENGIN_183D',
     'PHYSICS_7A',
-    'physics_7a_lee_3',
+    'lee_3',
     'physics_7a_william'
 
 ]
