@@ -3,7 +3,7 @@ import json
 import sys
 from courses.base_course import BaseCourse
 
-class PHYSICS_7A_1(BaseCourse):
+class physics_7a_william(BaseCourse):
     def __init__(self):
         super().__init__("https://classes.berkeley.edu/content/2024-spring-physics-7a-001-lec-001")
 
