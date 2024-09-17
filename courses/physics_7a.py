@@ -5,7 +5,7 @@ from courses.base_course import BaseCourse
 
 class PHYSICS_7A(BaseCourse):
     def __init__(self):
-        super().__init__("https://classes.berkeley.edu/content/2024-spring-physics-7a-002-lec-002")
+        super().__init__("https://classes.berkeley.edu/content/2024-fall-eecs-127-001-lec-001")
 
     def parse_html(self, html):
         soup = BeautifulSoup(html, 'html.parser')
@@ -20,8 +20,8 @@ class PHYSICS_7A(BaseCourse):
         try:
             data = json.loads(data_json)
             enrolled = data.get('available', {}).get('enrollmentStatus', {}).get('enrolledCount', 0)
-            available = enrolled < 192
-            message = f"{enrolled} enrolled out of 192 spots"
+            available = enrolled < 268
+            message = f"{enrolled} enrolled out of 268 spots"
             return available, message
         except json.JSONDecodeError as e:
             print(f"Failed to parse JSON: {e}")
